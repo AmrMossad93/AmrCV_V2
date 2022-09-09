@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {ProgrammingSkillsService} from '../../Services/programming-skills.service';
 import {IProgrammingSkills} from '../../Models/programming-skills';
 import {ExperienceService} from '../../Services/experience.service';
@@ -21,7 +21,7 @@ declare let $: any;
     templateUrl: './main-page.component.html',
     styleUrls: ['./main-page.component.scss']
 })
-export class MainPageComponent implements OnInit {
+export class MainPageComponent implements OnInit, AfterViewInit {
     programmingSkills: IProgrammingSkills[];
     experiences: IExperience[];
     educations: IEducation[];
@@ -29,6 +29,7 @@ export class MainPageComponent implements OnInit {
     serviceDetails: IServiceDetails[];
     client: IClient[];
     projects: IProject[];
+    private jQuery: any;
 
     constructor(
         private programmingSkillsService: ProgrammingSkillsService,
@@ -49,6 +50,21 @@ export class MainPageComponent implements OnInit {
         this.getMyServices();
         this.getMyClients();
         this.getMyProjects();
+    }
+
+    ngAfterViewInit() {
+        (function ($) {
+            $('.tab ul.tabs').addClass('active').find('> li:eq(0)').addClass('current');
+            $('.tab ul.tabs li').on('click', function (g) {
+                var tab = $(this).closest('.tab'),
+                    index = $(this).closest('li').index();
+                tab.find('ul.tabs > li').removeClass('current');
+                $(this).closest('li').addClass('current');
+                tab.find('.tab-content').find('div.tabs-item').not('div.tabs-item:eq(' + index + ')').slideUp();
+                tab.find('.tab-content').find('div.tabs-item:eq(' + index + ')').slideDown();
+                g.preventDefault();
+            });
+        })(this.jQuery);
     }
 
     getProgrammingSkillsDetails() {
