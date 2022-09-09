@@ -133,7 +133,7 @@ p {
     }
     &:hover {
         color: $white-color;
-        
+
         &::before {
             transform: scaleX(1);
         }
@@ -303,7 +303,7 @@ Preloader CSS
         top: 0;
         left: 0;
     }
-    .shadow { 
+    .shadow {
         width: 100%;
         height: 5px;
         background: #000000;
@@ -516,7 +516,7 @@ Navbar CSS
     }
 }
 @media only screen and (max-width: 991px) {
-    
+
     .navbar {
         padding-top: 15px;
 
@@ -539,7 +539,7 @@ Navbar CSS
                 background-color: $black-color;
                 padding: 12px 20px 10px;
                 margin-top: 15px;
-                
+
                 .nav-item {
                     .nav-link {
                         padding: 0 0 5px;
@@ -572,7 +572,7 @@ Navbar CSS
             };
         }
     }
-    
+
 }
 
 /*================================================
@@ -925,7 +925,7 @@ Main Banner CSS
     };
     &.banner-bg1 {
         background: {
-            image: url(assets/img/main-banner1.jpg);
+            image: url(assets/img/Amr.jpeg);
         };
     }
     &.banner-bg2 {
@@ -1030,7 +1030,7 @@ Main Banner CSS
     background-color: $dark-blue-color;
 }
 .banner-content {
-    
+
     .sub-title {
         display: block;
         color: $white-color;
@@ -1686,7 +1686,7 @@ About CSS
 
     .tabs-list {
         background-color: #1b2d34;
-        
+
         .tabs {
             padding-left: 0;
             margin-bottom: 0;
@@ -2335,7 +2335,7 @@ Services CSS
             }
         }
     }
-    &:hover {        
+    &:hover {
         .icon {
             background-color: $main-color;
             border-color: $main-color;
@@ -2384,7 +2384,7 @@ Services Details CSS
         }
         .features-text {
             margin-top: 25px;
-    
+
             h4 {
                 margin-bottom: 15px;
                 color: $white-color;
@@ -2415,7 +2415,7 @@ Services Details CSS
                     box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
                     background: $dark-blue-color;
                     margin-bottom: 10px;
-        
+
                     &:last-child {
                         margin-bottom: 0;
                     }
@@ -2440,7 +2440,7 @@ Services Details CSS
                         height: 100%;
                         background: $main-color;
                         color: $white-color;
-        
+
                         &::before {
                             position: absolute;
                             left: 0;
@@ -2452,7 +2452,7 @@ Services Details CSS
                     }
                     &.active {
                         border-bottom-color: #515151;
-        
+
                         i {
                             &::before {
                                 content: "\F0FB";
@@ -2464,7 +2464,7 @@ Services Details CSS
                     display: none;
                     position: relative;
                     padding: 15px 15px;
-        
+
                     &.show {
                         display: block;
                     }
@@ -2612,14 +2612,14 @@ Works CSS
 =================================================*/
 .single-works-box {
     margin-bottom: 30px;
-    
+
     .works-image {
         overflow: hidden;
         border-radius: 5px;
         transition: all 0.3s cubic-bezier(0.3, 0.58, 0.55, 1);
         position: relative;
         z-index: 1;
-        
+
         img {
             border-radius: 5px;
             transition: $transition;
@@ -2682,7 +2682,7 @@ Works CSS
             a {
                 display: inline-block;
                 color: $white-color;
-    
+
                 &:hover {
                     color: $main-color;
                 }
@@ -2747,14 +2747,14 @@ Works CSS
 }
 .works-box {
     margin-bottom: 30px;
-    
+
     .works-image {
         overflow: hidden;
         border-radius: 5px;
         transition: all 0.3s cubic-bezier(0.3, 0.58, 0.55, 1);
         position: relative;
         z-index: 1;
-        
+
         a {
             display: block;
 
@@ -2798,7 +2798,7 @@ Works CSS
             a {
                 display: inline-block;
                 color: $white-color;
-    
+
                 &:hover {
                     color: $main-color;
                 }
@@ -3153,7 +3153,7 @@ Feeback CSS
                 &:hover, &.active {
                     span {
                         border-color: $main-color;
-                    
+
                         &::before {
                             background-color: $main-color;
                         }
@@ -3188,7 +3188,7 @@ Countdown CSS
 }
 .countdown-timer {
     padding-left: 15px;
-    
+
     #timer {
         div {
             display: inline-block;
@@ -3755,7 +3755,7 @@ Team CSS
 .single-team-box {
     position: relative;
     margin-bottom: 20px;
-    
+
     img {
         filter: grayscale(100%);
         transition: $transition;
@@ -3822,7 +3822,7 @@ Team CSS
                 &:hover, &.active {
                     span {
                         border-color: $main-color;
-                    
+
                         &::before {
                             background-color: $main-color;
                         }
@@ -3935,11 +3935,11 @@ Blog CSS
                     color: $white-color;
                     display: inline-block;
                     font-size: 14px;
-    
+
                     a {
                         display: inline-block;
                         color: $main-color;
-    
+
                         &:hover {
                             color: $white-color;
                         }
@@ -3956,7 +3956,7 @@ Blog CSS
                     }
                     &:last-child {
                         margin-right: 0;
-    
+
                         &::before {
                             display: none;
                         }
@@ -4026,7 +4026,7 @@ Blog CSS
                 &:hover, &.active {
                     span {
                         border-color: $main-color;
-                    
+
                         &::before {
                             background-color: $main-color;
                         }
@@ -4054,7 +4054,7 @@ Blog Details CSS
                 padding-left: 0;
                 margin-bottom: 0;
                 list-style-type: none;
-    
+
                 li {
                     margin-right: 20px;
                     position: relative;
@@ -4090,7 +4090,7 @@ Blog Details CSS
                     a {
                         display: inline-block;
                         color: $white-color;
-    
+
                         &:hover, &:focus {
                             color: $main-color;
                         }
@@ -4190,7 +4190,7 @@ Blog Details CSS
             flex: 0 0 50%;
             max-width: 50%;
             color: $white-color;
-            
+
             span {
                 display: inline-block;
                 margin-right: 3px;
@@ -4216,7 +4216,7 @@ Blog Details CSS
         .article-share {
             flex: 0 0 50%;
             max-width: 50%;
-            
+
             .social {
                 padding-left: 0;
                 list-style-type: none;
@@ -4247,7 +4247,7 @@ Blog Details CSS
                         text-align: center;
                         font-size: 17px;
                         margin-left: 2px;
-        
+
                         &:hover, &:focus {
                             color: $main-color;
                             background-color: transparent;
@@ -5283,7 +5283,7 @@ Sidebar Eaxmple Demo CSS
             border: none;
             padding: 0;
             display: inline-block;
-    
+
             &:hover {
                 color: $main-color;
             }

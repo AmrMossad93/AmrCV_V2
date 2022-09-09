@@ -10596,7 +10596,7 @@ Flaticon icon font: Flaticon
 	}
 }
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
 	font-family: Flaticon;
 	font-style: normal;
 }
@@ -10628,10 +10628,10 @@ Flaticon icon font: Flaticon
 @font-face {
   font-family: "remixicon";
   src: url('remixicon.eot?t=1590207869815'); /* IE9*/
-  src: url('remixicon.eot?t=1590207869815#iefix') format('embedded-opentype'), 
+  src: url('remixicon.eot?t=1590207869815#iefix') format('embedded-opentype'),
   url('remixicon.woff2?t=1590207869815') format("woff2"),
   url('remixicon.woff?t=1590207869815') format("woff"),
-  url('remixicon.ttf?t=1590207869815') format('truetype'), 
+  url('remixicon.ttf?t=1590207869815') format('truetype'),
   url('remixicon.svg?t=1590207869815#remixicon') format('svg'); /* iOS 4.1- */
   font-display: swap;
 }
