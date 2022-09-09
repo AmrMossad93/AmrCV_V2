@@ -77,7 +77,7 @@ class AppComponent {
         this.routerSubscription = this.router.events
             .pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.filter)(event => event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__.NavigationEnd || event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__.NavigationCancel))
             .subscribe(event => {
-            $.getScript('../assets/js/main.js');
+            $.getScript('assets/js/main.js');
             $('.preloader').fadeOut('slow');
             this.location = this.router.url;
             if (!(event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_2__.NavigationEnd)) {
