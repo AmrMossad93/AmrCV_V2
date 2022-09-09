@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
-import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
-import { filter } from 'rxjs/operators';
+import {Component, OnInit} from '@angular/core';
+import {Router, NavigationStart, NavigationCancel, NavigationEnd} from '@angular/router';
+import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
+import {filter} from 'rxjs/operators';
+
 declare let $: any;
 
 @Component({
@@ -19,29 +20,30 @@ export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
 
-    constructor(private router: Router) {}
+    constructor(private router: Router) {
+    }
 
-    ngOnInit(){
+    ngOnInit() {
         this.recallJsFuntions();
     }
 
     recallJsFuntions() {
         this.router.events
-        .subscribe((event) => {
-            if ( event instanceof NavigationStart ) {
-                $('.preloader').fadeIn('slow');
-            }
-        });
+            .subscribe((event) => {
+                if (event instanceof NavigationStart) {
+                    $('.preloader').fadeIn('slow');
+                }
+            });
         this.routerSubscription = this.router.events
-        .pipe(filter(event => event instanceof NavigationEnd || event instanceof NavigationCancel))
-        .subscribe(event => {
-            $.getScript('../assets/js/main.js');
-            $('.preloader').fadeOut('slow');
-            this.location = this.router.url;
-            if (!(event instanceof NavigationEnd)) {
-                return;
-            }
-            window.scrollTo(0, 0);
-        });
+            .pipe(filter(event => event instanceof NavigationEnd || event instanceof NavigationCancel))
+            .subscribe(event => {
+                $.getScript('../assets/js/main.js');
+                $('.preloader').fadeOut('slow');
+                this.location = this.router.url;
+                if (!(event instanceof NavigationEnd)) {
+                    return;
+                }
+                window.scrollTo(0, 0);
+            });
     }
 }
