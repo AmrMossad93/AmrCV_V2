@@ -426,5 +426,65 @@
             "assets/img/Me/Projects/convex-1024x679.jpg"
         ],
         "vedioUrl": null
+    },
+    {
+        "id": 28,
+        "projectName": "El-Seif Health Care",
+        "projectDetail": "It Was A Mobile Application That Can The User Book A Doctor Who Is In The Seif Community",
+        "type": "Mobile",
+        "coreDevelopment": "Ionic , Capacitor , IOS , Android",
+        "client": "Seif Pharmacy - Vodaphone - Seen Solutions",
+        "category": "Medical",
+        "iosLink": null,
+        "androidLink": null,
+        "images": [
+            "assets/img/Seif/2.png",
+            "assets/img/Seif/1.png",
+            "assets/img/Seif/3.png",
+            "assets/img/Seif/4.png",
+            "assets/img/Seif/5.png",
+            "assets/img/Seif/6.png"
+        ],
+        "videoUrl": null
+    },
+    {
+        "id": 29,
+        "projectName": "Task Management",
+        "projectDetail": "It Was A Mobile Application That Can Manage Your Tasks.",
+        "type": "Mobile",
+        "coreDevelopment": "Ionic , Capacitor , IOS , Android",
+        "client": "TwoDevelopers",
+        "category": "Management",
+        "iosLink": null,
+        "androidLink": null,
+        "images": [
+            "assets/img/TaskManagment/1.png",
+            "assets/img/TaskManagment/2.png",
+            "assets/img/TaskManagment/3.png",
+            "assets/img/TaskManagment/4.png"
+        ],
+        "videoUrl": null
+    },
+    {
+        "id": 30,
+        "projectName": "NGSC",
+        "projectDetail": "It Was A Mobile Application That Can Manage Your New Giza Sports Club.",
+        "type": "Mobile",
+        "coreDevelopment": "Ionic , Capacitor , IOS , Android",
+        "client": "New Giza - Vodaphone - Seen Solutions",
+        "category": "Management",
+        "iosLink": "https://apps.apple.com/eg/app/ngsc/id1548540039",
+        "androidLink": "https://play.google.com/store/apps/details?id=com.ngsc.app",
+        "images": [
+            "assets/img/NGSC/1.jpeg",
+            "assets/img/NGSC/2.jpeg",
+            "assets/img/NGSC/3.jpeg",
+            "assets/img/NGSC/4.jpeg",
+            "assets/img/NGSC/5.jpeg",
+            "assets/img/NGSC/6.jpeg",
+            "assets/img/NGSC/7.jpeg",
+            "assets/img/NGSC/8.jpeg"
+        ],
+        "videoUrl": null
     }
 ]
