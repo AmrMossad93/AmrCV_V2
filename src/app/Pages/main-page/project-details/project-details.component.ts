@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {ProjectsService} from '../../../Services/projects.service';
-import {IProject} from '../../../Models/project';
+import {IProject} from '../../../Models/Interface/project';
 
 @Component({
     selector: 'app-project-details',

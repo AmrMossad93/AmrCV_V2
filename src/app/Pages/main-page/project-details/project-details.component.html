@@ -24,10 +24,13 @@
             <a href="#contact" class="default-btn">Hire Me</a>
 
             <ul class="social">
-                <li><a href="https://www.facebook.com/amr.mossad.12979" target="_blank"><i class="ri-facebook-box-line"></i></a></li>
+                <li><a href="https://www.facebook.com/amr.mossad.12979" target="_blank"><i
+                    class="ri-facebook-box-line"></i></a></li>
                 <li><a href="https://twitter.com/AmrMossad8" target="_blank"><i class="ri-twitter-line"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/amr-mossad-209976158/" target="_blank"><i class="ri-linkedin-box-line"></i></a></li>
-                <li><a href="https://www.instagram.com/eng.amrmossad2/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/amr-mossad-209976158/" target="_blank"><i
+                    class="ri-linkedin-box-line"></i></a></li>
+                <li><a href="https://www.instagram.com/eng.amrmossad2/" target="_blank"><i
+                    class="ri-instagram-line"></i></a></li>
             </ul>
         </div>
 
@@ -54,7 +57,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-6" *ngFor="let img of project?.images">
+                    <div class="col-lg-3 col-md-3 col-sm-3" *ngFor="let img of project?.images">
                         <div class="works-details-image">
                             <img [src]="img" alt="projects">
 
@@ -84,21 +87,29 @@
                                     <span>{{project?.category}}</span>
                                 </div>
 
-<!--                                <div class="single-info-box">-->
-<!--                                    <h4>Share</h4>-->
-<!--                                    <ul class="social">-->
-<!--                                        <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>-->
-<!--                                        <li><a href="#" target="_blank"><i class="ri-twitter-line"></i></a></li>-->
-<!--                                        <li><a href="#" target="_blank"><i class="ri-instagram-line"></i></a></li>-->
-<!--                                        <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-                                <div  *ngIf="!project?.webSiteURL" class="single-info-box">
+                                <!--                                <div class="single-info-box">-->
+                                <!--                                    <h4>Share</h4>-->
+                                <!--                                    <ul class="social">-->
+                                <!--                                        <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>-->
+                                <!--                                        <li><a href="#" target="_blank"><i class="ri-twitter-line"></i></a></li>-->
+                                <!--                                        <li><a href="#" target="_blank"><i class="ri-instagram-line"></i></a></li>-->
+                                <!--                                        <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>-->
+                                <!--                                    </ul>-->
+                                <!--                                </div>-->
+                                <div *ngIf="!project?.webSiteURL && !project.androidLink && !project.iosLink"
+                                     class="single-info-box">
                                     <h4>Sorry!</h4>
                                     <span>This App Is Not Finished From The Company Yet</span>
                                 </div>
                                 <div class="single-info-box" *ngIf="project?.webSiteURL">
                                     <a [href]="project?.webSiteURL" class="default-btn" target="_blank">Live Preview</a>
+                                </div>
+
+                                <div class="single-info-box" *ngIf="project?.androidLink">
+                                    <a [href]="project?.androidLink" class="default-btn" target="_blank">Android</a>
+                                </div>
+                                <div class="single-info-box" *ngIf="project?.iosLink">
+                                    <a [href]="project?.iosLink" class="default-btn" target="_blank">IOS</a>
                                 </div>
                             </div>
                         </div>

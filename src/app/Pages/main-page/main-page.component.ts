@@ -1,18 +1,18 @@
 import {AfterViewInit, Component, OnInit} from '@angular/core';
 import {ProgrammingSkillsService} from '../../Services/programming-skills.service';
-import {IProgrammingSkills} from '../../Models/programming-skills';
+import {IProgrammingSkills} from '../../Models/Interface/programming-skills';
 import {ExperienceService} from '../../Services/experience.service';
-import {IExperience} from '../../Models/experience';
+import {IExperience} from '../../Models/Interface/experience';
 import {EducationService} from '../../Services/education.service';
-import {IEducation} from '../../Models/education';
+import {IEducation} from '../../Models/Interface/education';
 import {CertificationService} from '../../Services/certification.service';
-import {ICertification} from '../../Models/certification';
+import {ICertification} from '../../Models/Interface/certification';
 import {ServiceDetailsService} from '../../Services/service-details.service';
-import {IServiceDetails} from '../../Models/service-details';
+import {IServiceDetails} from '../../Models/Interface/service-details';
 import {ClientService} from '../../Services/client.service';
-import {IClient} from '../../Models/client';
+import {IClient} from '../../Models/Interface/client';
 import {ProjectsService} from '../../Services/projects.service';
-import {IProject} from '../../Models/project';
+import {IProject} from '../../Models/Interface/project';
 
 declare let $: any;
 
